@@ -2,6 +2,10 @@
   "name": "CoreUI",
   "version": "1.0.0-alpha.4",
   "description": "Open Source Bootstrap Admin",
+  "engines": {
+    "node": "6.9.4",
+	"npm": "4.4.1"
+  },
   "author": "",
   "url": "http://coreui.io",
   "copyright": "Copyright 2017 creativeLabs Łukasz Holeczek",
