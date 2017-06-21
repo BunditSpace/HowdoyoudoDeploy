@@ -6,7 +6,7 @@ export class ConfigService {
     private _apiURI : string;
  
     constructor() {
-        this._apiURI = 'http://localhost:3000';
+        this._apiURI = 'https://howdoyoudo-first-deploy.herokuapp.com';
      }
  
      getApiURI() {
