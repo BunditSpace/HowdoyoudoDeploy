@@ -1,9 +1,9 @@
 <span tabindex="0">
-  <template ngFor [ngForOf]="range" let-index="index">
+  <ng-template ngFor [ngForOf]="range" let-index="index">
     <span class="sr-only">({{ index < rate ? '*' : ' ' }})</span>
     <i class="fa-lg mt-2"
       [ngClass]="index < rate ? 'fa fa-thumbs-up' : 'fa fa-thumbs-o-down'"
       (click)="update(index + 1)">
     </i>
-  </template>
+  </ng-template>
 </span>

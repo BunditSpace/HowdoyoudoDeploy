@@ -3,11 +3,10 @@ import {Component,
   Input,
   Output,
   EventEmitter,
-  ChangeDetectionStrategy, OnInit, ViewChild
+  OnInit
 } from '@angular/core';
 
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/do';
 import { Conversation } from './conversation';
 import { ConversationService } from './services/conversation.service';
 import { ConversationDetail } from './conversation-detail.component';
@@ -25,7 +24,6 @@ export class ConversationDisplay implements OnInit {
   errorMessage: string;
 
   selectedConversation: Conversation;
-  @ViewChild(ConversationList) conList : ConversationList;
 
   ngOnInit(){
      
