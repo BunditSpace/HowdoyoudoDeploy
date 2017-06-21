@@ -1,3 +1,4 @@
+import { BsDropdownModule } from 'ng2-bootstrap/dropdown';
 
 import { LoggedInGuard } from './../auth/services/loggedin.guard';
 import { AuthenticationService } from './../auth/services/authentication.service';
@@ -13,7 +14,8 @@ import { ConfigService } from './../shared/services/config.service';
   imports: [
     DashboardRoutingModule,
     ChartsModule,
-    HttpModule
+    HttpModule,
+    BsDropdownModule
   ],
   declarations: [ DashboardComponent ],
   providers: [AuthenticationService, LoggedInGuard, ConfigService]

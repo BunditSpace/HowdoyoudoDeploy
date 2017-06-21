@@ -24,6 +24,7 @@ import { ConversationDetail } from './conversation-detail.component';
 import { ConfigService } from './../shared/services/config.service';
 import { CommonModule } from "@angular/common";
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { BsDropdownModule } from "ng2-bootstrap/dropdown";
 
 @NgModule({
   imports: [
@@ -36,7 +37,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     ReactiveFormsModule,
     ConversationListModule,  
     DataTableModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    BsDropdownModule
   ],
   exports: [RatingComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ],
