@@ -1,0 +1,17 @@
+<div class="card" #parent>
+    <div class="card-block">
+    <div>
+        <conversation-detail
+            (saved)="saveConversation($event)" (cancelled)="resetConversation()"
+            [conversation]="selectedConversation">Pick your Fancy:
+        </conversation-detail>
+    </div>
+    </div>
+    <div class="card-block">
+    <div *ngIf="conversations">
+        <conversation-list [conversations]="conversations"
+            (selected)="selectConversation($event)" (deleted)="deleteConversation($event)">
+        </conversation-list>
+    </div>
+    </div>
+</div>
